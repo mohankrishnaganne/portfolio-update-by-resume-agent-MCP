@@ -1,3 +1,6 @@
 mcp==1.2.1
 google-genai==0.3.0
 python-dotenv==1.0.1
+Flask==3.0.3
+PyPDF2==3.0.1
+boto3==1.35.60

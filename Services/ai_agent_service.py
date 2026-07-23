@@ -1,4 +1,6 @@
 import asyncio
+from datetime import datetime, timezone
+
 from google import genai
 from google.genai import types
 
@@ -18,6 +20,18 @@ def _convert_mcp_schema(schema: dict) -> dict:
     if "items" in schema: gemini_schema["items"] = _convert_mcp_schema(schema["items"])
     if "required" in schema: gemini_schema["required"] = schema["required"]
     return gemini_schema
+
+
+def inject_commit_metadata(html_content: str, timestamp: str | None = None) -> str:
+    timestamp = timestamp or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    marker = f'<meta name="portfolio-generated-at" content="{timestamp}">'
+
+    if "<head" in html_content.lower():
+        return html_content.replace("<head>", f"<head>\n{marker}", 1)
+    if "<html" in html_content.lower():
+        return html_content.replace("<html>", f"<html>\n{marker}", 1)
+    return f"<!DOCTYPE html><html><head>{marker}</head><body>{html_content}</body></html>"
+
 
 async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, github_username: str) -> str:
     mcp_client = GitHubMCPClient()
@@ -78,6 +92,9 @@ async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, 
             for function_call in function_calls:
                 tool_name = function_call.name
                 tool_args = {k: v for k, v in function_call.args.items()} if hasattr(function_call.args, 'items') else dict(function_call.args)
+
+                if tool_name == "create_or_update_file" and isinstance(tool_args.get("content"), str):
+                    tool_args["content"] = inject_commit_metadata(tool_args["content"])
                 
                 try:
                     mcp_result = await mcp_client.call_tool(tool_name, tool_args)
