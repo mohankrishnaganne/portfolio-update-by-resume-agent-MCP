@@ -33,7 +33,7 @@ def inject_commit_metadata(html_content: str, timestamp: str | None = None) -> s
     return f"<!DOCTYPE html><html><head>{marker}</head><body>{html_content}</body></html>"
 
 
-async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, github_username: str) -> str:
+async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, github_username: str, resume_filename: str = "resume.pdf", upload_timestamp: str = None, s3_key: str = None) -> str:
     mcp_client = GitHubMCPClient()
     try:
         await mcp_client.connect()
@@ -65,6 +65,11 @@ async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, 
         Repo: '{repo_name}'
         File: '{file_path}'
         Branch: 'main'
+        
+        Resume Upload Information:
+        - Filename: '{resume_filename}'
+        - Upload Timestamp: '{upload_timestamp}'
+        - S3 Location: '{s3_key}'
 
         Resume text:
         {resume_text}
@@ -73,6 +78,8 @@ async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, 
         1. Use the 'get_file_contents' tool to check if '{file_path}' exists in the repo. If it does, extract the 'sha'.
         2. Generate the clean HTML portfolio.
         3. Use the 'create_or_update_file' tool to commit the HTML. If the file already existed, you MUST include the 'sha' parameter from step 1 to successfully update it.
+           IMPORTANT: Use a meaningful commit message that includes the resume upload details:
+           "Update portfolio from resume upload: {resume_filename} [{upload_timestamp}] - S3: {s3_key}"
         """
         
         print("[System] Waiting for AI response...")
@@ -113,6 +120,6 @@ async def _run_agent_pipeline(resume_text: str, repo_name: str, file_path: str, 
     finally:
         await mcp_client.cleanup()
 
-# Update the synchronous wrapper to accept the new parameter
-def generate_and_commit_portfolio(resume_text: str, repo_name: str, file_path: str, github_username: str) -> str:
-    return asyncio.run(_run_agent_pipeline(resume_text, repo_name, file_path, github_username))
+# Update the synchronous wrapper to accept the new parameters
+def generate_and_commit_portfolio(resume_text: str, repo_name: str, file_path: str, github_username: str, resume_filename: str = "resume.pdf", upload_timestamp: str = None, s3_key: str = None) -> str:
+    return asyncio.run(_run_agent_pipeline(resume_text, repo_name, file_path, github_username, resume_filename, upload_timestamp, s3_key))

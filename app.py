@@ -1,8 +1,10 @@
 from flask import Flask, request, render_template
+from datetime import datetime
 
 from Services.s3_service import upload_to_s3
 from Services.pdf_service import extract_text_from_pdf
 from Services.ai_agent_service import generate_and_commit_portfolio
+from Services.upload_logger import log_resume_upload
 
 app = Flask(__name__)
 
@@ -40,15 +42,23 @@ def upload_file():
         repo_name = "mcp-demo-repo"
         file_path = "portfolio.html"
         github_username = "mohankrishnaganne"
+        resume_filename = file.filename
+        upload_timestamp = datetime.now().isoformat()
         
         # Run the agent
         generate_and_commit_portfolio(
             resume_text=resume_text, 
             repo_name=repo_name, 
             file_path=file_path,
-            github_username=github_username
+            github_username=github_username,
+            resume_filename=resume_filename,
+            upload_timestamp=upload_timestamp,
+            s3_key=s3_key
         )
         print("[System] AI processing complete!")
+        
+        # Log the upload for audit trail
+        log_resume_upload(resume_filename, upload_timestamp, s3_key)
         
         # Manually construct the bulletproof GitHub URL
         safe_github_url = f"https://github.com/{github_username}/{repo_name}/blob/main/{file_path}"
