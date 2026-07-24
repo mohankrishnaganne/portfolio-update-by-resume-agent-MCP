@@ -39,7 +39,7 @@ def upload_file():
         print("[System] Triggering AI Agent...")
         
         # Define your variables here
-        repo_name = "mcp-demo-repo"
+        repo_name = "portfolio-update-by-resume-agent-MCP"
         file_path = "portfolio.html"
         github_username = "mohankrishnaganne"
         resume_filename = file.filename
