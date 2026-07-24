@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="portfolio-generated-at" content="2026-07-24T23:11:35.425048">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Srinivas Namburi's Professional Portfolio - Data Engineering, Data Analytics, ETL, and AI/ML Solutions.">
+    <meta name="keywords" content="Data Engineer, Data Analyst, ETL, Data Visualization, AWS, Spark, Kafka, Airflow, Databricks, Snowflake, dbt, Python, SQL, LLM, GenAI, MLOps">
+    <meta name="author" content="Srinivas Namburi">
+    <meta name="last-updated" content="2026-07-24T23:11:35.425048">
+    <title>Srinivas Namburi - Data & AI Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Dark blue-grey */
+            --secondary-color: #3498db; /* Bright blue */
+            --accent-color: #e74c3c; /* Red for highlights */
+            --text-color: #333;
+            --light-text-color: #7f8c8d;
+            --bg-color: #f4f7f6;
+            --card-bg-color: #ffffff;
+            --border-color: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: var(--card-bg-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #ecf0f1;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .summary {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background-color: var(--card-bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            font-size: 1.3em;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-category li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            color: var(--light-text-color);
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .experience-item:last-of-type, .project-item:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .experience-item h3, .project-item h3 {
+            color: var(--primary-color);
+            font-size: 1.6em;
+            margin-bottom: 5px;
+        }
+
+        .experience-item .role, .project-item .role {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        .experience-item .duration, .project-item .duration {
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .experience-item ul, .project-item ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        .experience-item li, .project-item li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .tech-stack {
+            font-style: italic;
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            margin-top: 15px;
+        }
+
+        .education-item, .certification-item, .research-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h3, .certification-item h3, .research-item h3 {
+            color: var(--primary-color);
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .education-item p, .certification-item p, .research-item p {
+            margin: 0;
+            color: var(--light-text-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 20px;
+            border-top: 5px solid var(--secondary-color);
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .contact-info a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SAI SRINIVAS NAMBURI</h1>
+            <p>Applied AI / GenAI Engineer | Data Engineering & Analytics Specialist</p>
+            <div class="contact-info">
+                <a href="tel:+13163762906">+1 (316) 376-2906</a> |
+                <a href="mailto:saisrinivas0311@gmail.com">saisrinivas0311@gmail.com</a> |
+                <a href="https://github.com/mohankrishnaganne" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Applied AI / GenAI Engineer with 5+ years of enterprise experience in automation, data platforms, and cloud-based solution delivery, now specializing in Large Language Model (LLM) applications and Generative AI systems. Hands-on experience building Retrieval-Augmented Generation (RAG) pipelines, prompt engineering workflows, and LLM-powered applications for knowledge automation and intelligent decision support. Proven background delivering scalable data validation, API-driven microservices, and streaming data solutions in healthcare and banking domains. Strong foundation in Python, SQL, Databricks, Kafka, and CI/CD with practical exposure to ML experimentation and evaluation. Skilled at collaborating with cross-functional teams and translating complex technical solutions into business impact.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming & Data Languages</h3>
+                    <ul>
+                        <li><strong>Python (Expert)</strong>, SQL, R, Java</li>
+                        <li>Pandas, NumPy, SciPy, <strong>PySpark</strong></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Engineering & Databases</h3>
+                    <ul>
+                        <li><strong>Apache Kafka</strong>, <strong>Apache Spark</strong>, <strong>Databricks</strong>, <strong>Delta Lake</strong></li>
+                        <li><strong>Airflow</strong>, <strong>ETL/ELT</strong></li>
+                        <li>FAISS, Pinecone, ChromaDB, Vector DB</li>
+                        <li>MongoDB, PostgreSQL, MySQL, Oracle</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li><strong>AWS</strong> (SageMaker, Bedrock, S3, Lambda, EKS, EMR, Redshift, Glue)</li>
+                        <li><strong>Azure</strong> (Databricks, AI Studio, Synapse)</li>
+                        <li>GCP (Vertex AI, BigQuery)</li>
+                        <li>Docker, Kubernetes, Terraform, Jenkins, CI/CD</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>ML & GenAI</h3>
+                    <ul>
+                        <li>Deep Learning, Neural Networks, Transformers, LLM Fine-Tuning (QLoRA, GRPO, PEFT, RLHF), RAG Systems</li>
+                        <li>OpenAI GPT-4o, Llama, T5, BLOOM, RoBERTa, BERT, Agentic AI, ReAct, Autogen, CrewAI, Prompt Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & MLOps</h3>
+                    <ul>
+                        <li>PyTorch, TensorFlow, Keras, Hugging Face Transformers, LangChain, LangGraph, Scikit-learn</li>
+                        <li>End-to-End ML Pipelines, Kubeflow, <strong>MLflow</strong>, Model Monitoring, Guardrails, Real-Time Inference</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li><strong>Tableau</strong>, <strong>Power BI</strong></li>
+                        <li>Advanced Excel (Power Query, Pivot Tables, VBA)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <h3>AI Engineer – LLM Fine-Tuning & AI Security</h3>
+                <p class="role">KeyBank | Remote</p>
+                <span class="duration">January 2025 – Present</span>
+                <ul>
+                    <li>Designed and developed LLM-powered automation services to support banking operations, including natural-language-driven query and analysis tools for internal support teams.</li>
+                    <li>Built Retrieval-Augmented Generation (RAG) pipelines using LangChain and vector databases to enable semantic search over banking policy, onboarding, and transaction documentation.</li>
+                    <li>Developed FastAPI-based services exposing LLM-powered endpoints for intelligent workflow assistance and knowledge retrieval.</li>
+                    <li>Implemented prompt engineering and response validation frameworks to improve LLM accuracy, reduce hallucinations, and ensure compliance with internal data governance standards.</li>
+                    <li>Integrated GenAI services with <strong>AWS cloud infrastructure</strong> using Docker-based deployments and CI/CD pipelines for controlled release and monitoring.</li>
+                    <li>Built <strong>data preprocessing and validation pipelines using Python and SQL</strong> to prepare structured banking datasets for LLM-assisted analytics and automation use cases.</li>
+                    <li>Implemented <strong>Kafka-based event validations</strong> to ensure reliable data ingestion for real-time banking transaction and notification workflows.</li>
+                    <li>Developed <strong>Streamlit-based interactive dashboards</strong> to demonstrate natural-language-to-SQL querying and AI-assisted root cause analysis for operational teams.</li>
+                    <li>Collaborated with data, security, and compliance teams to ensure GenAI applications aligned with banking risk, audit, and data protection requirements.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python, LangChain, OpenAI/AWS Bedrock APIs, Vector Databases (FAISS/Chroma), FastAPI, AWS, Kafka, SQL, Docker, CI/CD, Git.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>AI Engineer</h3>
+                <p class="role">National Institute for Aviation Research (NIAR) | Wichita, KS</p>
+                <span class="duration">January 2024 – December 2024</span>
+                <ul>
+                    <li>Evaluated agentic AI frameworks including LangGraph, Autogen, and Crew AI to design multi-step LLM workflows for task automation and knowledge retrieval.</li>
+                    <li>Built <strong>Databricks-based ML experimentation pipelines using PySpark</strong> for feature generation and model prototyping as part of applied AI research projects.</li>
+                    <li>Implemented ML experiment tracking using <strong>MLflow</strong>, enabling reproducible model development and evaluation across multiple training runs.</li>
+                    <li>Designed Retrieval-Augmented Generation (RAG) pipelines integrating LangChain with vector databases to improve response relevance for domain-specific question answering.</li>
+                    <li>Built <strong>PySpark pipelines on Databricks for risk model feature generation</strong>, improving throughput by ~40% and registering features in Feature Store.</li>
+                    <li>Established model governance with MLflow Registry (staging-prod), Unity Catalog lineage, and CI/CD via Repos + Asset Bundles, cutting deployment errors by 32%.</li>
+                    <li>Implemented automated validation (stat tests, SHAP, drift checks) and DLT expectations, achieving 99.7% benchmark compliance and reducing inference latency by 58% via containerized serving.</li>
+                    <li>Applied ensemble methods and SHAP for stability, promoting models through UC-controlled registries with approval gates and automated rollback.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python, LangChain, LangGraph, AutoGen, PySpark, Databricks, MLflow, Vector Databases, SHAP, Unity Catalog, CI/CD, Git.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Data Scientist / Senior Data Scientist</h3>
+                <p class="role">Cognizant | India</p>
+                <span class="duration">January 2021 – December 2023</span>
+                <ul>
+                    <li>Designed and implemented <strong>Python and SQL-based data validation and orchestration frameworks</strong> to verify healthcare claims, enrollment, and provider data pipelines across relational (DB2, PostgreSQL) and distributed systems.</li>
+                    <li>Developed API-driven data validation services to ensure integrity of microservices handling patient eligibility, claim submission, and remittance workflows, enhancing reliability of enterprise healthcare data platforms.</li>
+                    <li>Developed <strong>ETL and data reconciliation pipelines</strong> to validate transformation and movement of transactional healthcare data from operational systems into analytical and reporting platforms.</li>
+                    <li>Implemented <strong>streaming data validation for Kafka-based event pipelines</strong>, ensuring schema consistency, message integrity, and accurate ingestion of EDI 834/837 healthcare transactions.</li>
+                    <li>Created automated <strong>data quality and profiling frameworks using SQL</strong> and custom scripts to ensure integrity of claims, provider, and member datasets across multi-environment deployments.</li>
+                    <li>Integrated data validation pipelines into <strong>Azure DevOps CI/CD workflows</strong>, enabling continuous execution, monitoring, and reporting of data and service reliability checks.</li>
+                    <li>Developed <strong>cloud-based data validation environments using AWS services</strong> to support scalable execution of healthcare data and service verification pipelines.</li>
+                    <li>Led a team of engineers delivering scalable data validation solutions, providing technical guidance, code reviews, and workflow design for enterprise healthcare systems.</li>
+                    <li>Collaborated with business, data, and engineering teams to gather requirements, design scalable data architectures, and support modernization initiatives for AI-ready healthcare platforms.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python, SQL, DB2, PostgreSQL, ETL, Apache Kafka, REST APIs, AWS, Azure DevOps, Docker, Kubernetes, Git, Linux.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Business Intelligence Analyst / Data Scientist</h3>
+                <p class="role">Cybage Software private limited | India</p>
+                <span class="duration">Feb 2021 – December 2021</span>
+                <ul>
+                    <li>Developed and optimized complex <strong>SQL (T-SQL, PL/SQL) queries and database objects</strong> (tables, views, stored procedures, UDFs), improving data retrieval performance and enabling scalable analytical reporting.</li>
+                    <li>Built <strong>cloud-scale ETL and data transformation pipelines using PySpark, SSIS, and Databricks</strong> to ingest, cleanse, and process large datasets from <strong>AWS S3 into Amazon Redshift and Azure Synapse</strong>.</li>
+                    <li>Modernized legacy Informatica PowerCenter workloads by converting mappings into distributed <strong>PySpark jobs</strong>, ensuring compatibility with cloud-native data platforms.</li>
+                    <li>Implemented automated <strong>data validation and reconciliation frameworks using SQL and PySpark</strong> to ensure accuracy, consistency, and integrity of datasets across multi-environment deployments.</li>
+                    <li>Orchestrated <strong>data pipelines using Apache Airflow</strong> and SQL Server Agent, enabling reliable scheduling, monitoring, and failure recovery of enterprise data workflows.</li>
+                    <li>Designed and deployed optimized SSIS packages applying indexing, partitioning, and transaction isolation strategies to enhance ETL throughput and scalability.</li>
+                    <li>Developed analytics-ready data marts and reporting layers, delivering SSRS reports and dashboards supporting daily, weekly, and monthly business operations.</li>
+                    <li>Created <strong>interactive BI dashboards using Power BI, Tableau</strong>, and Excel (Power Query, Pivot Tables, VBA) to provide real-time operational and financial insights.</li>
+                    <li>Performed <strong>data quality checks, profiling, and automated unit/integration testing using PyTest and SQL-based test frameworks</strong> to ensure trustworthiness of business-critical data assets.</li>
+                    <li>Collaborated with business and technical stakeholders to gather requirements, prepare high-level design documentation, and deliver data platform enhancements in Agile environments using JIRA and Confluence.</li>
+                    <li>Supported API-based data access services to expose curated datasets for downstream applications, analytics, and AI/ML model consumption.</li>
+                    <li>Contributed to scalable and future-ready data architecture design, ensuring readiness for advanced analytics and AI-driven enterprise initiatives.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> SQL (T-SQL, PL/SQL), PySpark, Databricks, Apache Airflow, AWS (S3, Redshift), Azure Synapse, SSIS, Power BI, Tableau, REST APIs, Git, Linux.</p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+
+            <div class="project-item">
+                <h3>WSDM Cup 2024 – LLM Evaluation (Top 10%)</h3>
+                <ul>
+                    <li>Built LightGBM + Universal Sentence Encoder embeddings model for multilingual LLM response scoring.</li>
+                    <li>Fine-tuned DistilBERT with GAMMA 4-bit quantization achieving top 10% ranking among international competitors.</li>
+                    <li>Implemented comprehensive evaluation metrics tracking model performance, latency, and memory efficiency.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Financial Domain RAG Assistant – Regulatory Compliance</h3>
+                <ul>
+                    <li>Built production RAG pipeline over financial disclosures and regulatory filings using FAISS embeddings for enterprise-scale document retrieval.</li>
+                    <li>Integrated LLM guardrails ensuring SEC/IRS compliance, improving factual accuracy by 25% through systematic A/B testing.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>AI Security Red Teaming Framework</h3>
+                <ul>
+                    <li>Developed comprehensive framework for detecting prompt injection attacks, model denial of service, and information leakage vulnerabilities.</li>
+                    <li>Designed compliance scoring aligned with OWASP Top 10 for LLMs for enterprise deployments.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Computer Vision Quality Inspection System</h3>
+                <ul>
+                    <li>Developed end-to-end deep learning pipeline using ResNet and EfficientNet architectures for automated visual inspection.</li>
+                    <li>Shipped production-grade system with optimized inference, reducing manual inspection effort by 40%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research</h2>
+            <div class="research-item">
+                <ul>
+                    <li>Research on transformer-based NLP models for agricultural domain applications with peer-reviewed contributions.</li>
+                    <li>Contributing author on LLM safety evaluation methodologies and guardrail design for regulated environments.</li>
+                    <li>Research contributions to AI security frameworks including prompt injection detection and red teaming methodologies for enterprise LLM deployments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Science in Business Analytics – Data Science Track</h3>
+                <p>Wichita State University, Kansas</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Mechanical Engineering</h3>
+                <p>Lovely Professional University, India</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications & Awards</h2>
+            <div class="certification-item">
+                <ul>
+                    <li>Top 10% Finalist – WSDM Cup 2024 (LLM Evaluation Track) – International competitive benchmark for LLM evaluation.</li>
+                    <li>Certified Data Scientist – Dell/NVIDIA GenAI Model Augmentation & Data Engineering Program.</li>
+                    <li>Meta Advanced Management Program – Leadership and technical management certification.</li>
+                    <li>$10,000 Garvey Family Scholarship Recipient – Academic excellence and research potential recognition.</li>
+                    <li>Graduate Research Assistantships – NIAR (Aviation AI) & Koch Global Trading Center (Financial ML Applications).</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Srinivas Namburi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
