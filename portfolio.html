@@ -2,76 +2,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="portfolio-generated-at" content="2026-07-26T22:00:07.159751">
+<meta name="portfolio-generated-at" content="2026-07-26T21:57:27.222260">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator-timestamp" content="2026-07-26T22:00:07.159751">
-    <title>Sampath Kumar Muthyalapati - Data Engineer & Analyst Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="generator" content="Portfolio Generator - 2026-07-26T21:57:27.222260">
+    <title>Sai Srinivas Namburi - Data Engineer & Applied AI Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --accent-color: #28a745;
-            --background-light: #f8f9fa;
-            --background-dark: #343a40;
-            --text-color: #212529;
-            --text-light: #f8f9fa;
-            --card-background: #ffffff;
+            --primary-color: #007bff; /* A vibrant blue */
+            --secondary-color: #6c757d; /* Muted grey */
+            --accent-color: #28a745; /* Green for highlights */
+            --text-color: #343a40; /* Dark grey for readability */
+            --light-text-color: #6c757d;
+            --bg-color: #f8f9fa; /* Light grey background */
+            --card-bg-color: #ffffff;
             --border-color: #e9ecef;
-            --shadow-light: rgba(0, 0, 0, 0.05);
-            --shadow-medium: rgba(0, 0, 0, 0.1);
+            --font-family-sans: 'Inter', sans-serif;
+            --font-family-mono: 'Roboto Mono', monospace;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--font-family-sans);
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-light);
             color: var(--text-color);
-            scroll-behavior: smooth;
+            background-color: var(--bg-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: calc(2 * var(--spacing-unit));
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin-bottom: var(--spacing-unit);
+            color: var(--text-color);
+        }
+
+        h1 { font-size: 2.8rem; line-height: 1.2; }
+        h2 { font-size: 2.2rem; margin-top: calc(3 * var(--spacing-unit)); margin-bottom: calc(1.5 * var(--spacing-unit)); border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.6rem; margin-top: calc(2 * var(--spacing-unit)); }
+        h4 { font-size: 1.2rem; }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--border-color);
+            color: var(--light-text-color);
+            padding: 0.3rem 0.7rem;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            margin: 0.2rem;
+            font-family: var(--font-family-mono);
+        }
+
+        /* Header / Hero Section */
         header {
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
+            color: #ffffff;
+            padding: calc(4 * var(--spacing-unit)) 0;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
 
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(45deg);
+            opacity: 0.3;
+        }
+
         header h1 {
-            margin: 0;
-            font-size: 3.5em;
-            font-weight: 700;
-            letter-spacing: -1px;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 3.5rem;
         }
 
         header p {
-            font-size: 1.4em;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
             font-weight: 300;
-            margin-top: 10px;
-            color: rgba(255, 255, 255, 0.8);
         }
 
         .contact-info {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
         }
 
         .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin: 0 10px;
+            color: #ffffff;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             transition: color 0.3s ease;
         }
 
@@ -79,537 +140,235 @@
             color: var(--accent-color);
         }
 
+        .contact-info svg {
+            fill: currentColor;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Section Styling */
         section {
-            padding: 60px 0;
-            border-bottom: 1px solid var(--border-color);
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: calc(2 * var(--spacing-unit));
+            padding: calc(2 * var(--spacing-unit));
         }
 
-        section:last-of-type {
-            border-bottom: none;
+        /* Professional Summary */
+        #summary p {
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
-        h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: var(--primary-color);
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
-
-        .summary-text {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1em;
-            color: var(--secondary-color);
-        }
-
+        /* Skills Section */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(1.5 * var(--spacing-unit));
         }
 
-        .skill-category {
-            background-color: var(--card-background);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px var(--shadow-light);
-            padding: 25px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px var(--shadow-medium);
-        }
-
-        .skill-category h3 {
+        .skill-category h4 {
             color: var(--primary-color);
-            font-size: 1.4em;
-            margin-top: 0;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
+            margin-bottom: var(--spacing-unit);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .skill-category ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .skill-category h4 svg {
+            fill: var(--primary-color);
+            width: 20px;
+            height: 20px;
         }
 
-        .skill-category li {
-            background-color: var(--background-light);
-            border-left: 3px solid var(--accent-color);
-            padding: 8px 15px;
-            margin-bottom: 8px;
-            border-radius: 4px;
-            font-size: 0.95em;
-            color: var(--text-color);
+        .skill-category .tag {
+            margin-bottom: 0.5rem;
         }
 
-        .experience-timeline {
+        /* Experience Timeline */
+        #experience .timeline {
             position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px 0;
+            padding-left: 30px;
         }
 
-        .experience-timeline::before {
+        #experience .timeline::before {
             content: '';
             position: absolute;
-            left: 50%;
+            top: 0;
+            left: 10px;
             width: 2px;
             height: 100%;
-            background: var(--border-color);
-            transform: translateX(-50%);
+            background-color: var(--border-color);
         }
 
-        .timeline-item {
-            margin-bottom: 40px;
+        #experience .timeline-item {
             position: relative;
-            width: 50%;
-            padding: 10px 40px;
-            box-sizing: border-box;
+            margin-bottom: calc(2 * var(--spacing-unit));
+            padding-left: calc(2 * var(--spacing-unit));
         }
 
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            text-align: right;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
-            text-align: left;
-        }
-
-        .timeline-item::after {
+        #experience .timeline-item::before {
             content: '';
             position: absolute;
-            width: 16px;
-            height: 16px;
+            top: 5px;
+            left: 0;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            background: var(--primary-color);
-            border: 4px solid var(--background-light);
-            top: 15px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--card-bg-color);
             z-index: 1;
         }
 
-        .timeline-item:nth-child(odd)::after {
-            right: -8px;
-        }
-
-        .timeline-item:nth-child(even)::after {
-            left: -8px;
-        }
-
-        .timeline-content {
-            background-color: var(--card-background);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px var(--shadow-light);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px var(--shadow-medium);
-        }
-
-        .timeline-content h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-            font-size: 1.3em;
-        }
-
-        .timeline-content p {
-            margin: 5px 0;
-            color: var(--secondary-color);
-        }
-
-        .timeline-content ul {
-            padding-left: 20px;
-            margin-top: 15px;
+        #experience .job-title {
+            font-size: 1.3rem;
             color: var(--text-color);
+            margin-bottom: 0.2rem;
         }
 
-        .timeline-content li {
-            margin-bottom: 8px;
+        #experience .company-name {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 0.2rem;
         }
 
-        .projects-grid {
+        #experience .job-duration {
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            margin-bottom: 1rem;
+            font-family: var(--font-family-mono);
+        }
+
+        #experience ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+
+        #experience ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        #experience .tech-stack {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+        }
+
+        /* Projects Section */
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            gap: calc(1.5 * var(--spacing-unit));
         }
 
         .project-card {
-            background-color: var(--card-background);
+            background-color: var(--card-bg-color);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
-            box-shadow: 0 4px 15px var(--shadow-light);
-            overflow: hidden;
+            padding: calc(1.5 * var(--spacing-unit));
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 20px var(--shadow-medium);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
         }
 
-        .project-card-content {
-            padding: 25px;
-            flex-grow: 1;
-        }
-
-        .project-card h3 {
-            margin-top: 0;
+        .project-card h4 {
             color: var(--primary-color);
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
         }
 
         .project-card p {
-            color: var(--secondary-color);
-            font-size: 0.95em;
-            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: var(--light-text-color);
         }
 
-        .project-card .technologies {
-            font-size: 0.85em;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 15px;
+        /* Education & Certifications */
+        .education-item, .certification-item {
+            margin-bottom: var(--spacing-unit);
+            padding-bottom: var(--spacing-unit);
+            border-bottom: 1px dashed var(--border-color);
         }
 
-        .project-card .project-links {
-            margin-top: auto; /* Pushes links to the bottom */
-            padding: 0 25px 25px;
-            display: flex;
-            gap: 15px;
+        .education-item:last-child, .certification-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
-        .project-card .project-links a {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
+        .education-item h4, .certification-item h4 {
+            margin-bottom: 0.2rem;
+            color: var(--text-color);
         }
 
-        .project-card .project-links a:hover {
-            background-color: var(--accent-color);
+        .education-item p, .certification-item p {
+            font-size: 0.95rem;
+            color: var(--light-text-color);
         }
 
-        .education-item {
-            background-color: var(--card-background);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px var(--shadow-light);
-            padding: 25px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .education-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px var(--shadow-medium);
-        }
-
-        .education-item h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-            font-size: 1.4em;
-        }
-
-        .education-item p {
-            margin: 5px 0;
-            color: var(--secondary-color);
-        }
-
+        /* Footer */
         footer {
-            background-color: var(--background-dark);
-            color: var(--text-light);
             text-align: center;
-            padding: 40px 0;
-            font-size: 0.9em;
+            padding: calc(2 * var(--spacing-unit));
+            color: var(--light-text-color);
+            font-size: 0.9rem;
+            margin-top: calc(3 * var(--spacing-unit));
         }
 
-        footer .social-links {
-            margin-top: 20px;
-        }
-
-        footer .social-links a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        footer .social-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Responsive adjustments */
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            header p {
-                font-size: 1.1em;
-            }
-            h2 {
-                font-size: 2em;
-            }
-            .skills-grid, .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            .experience-timeline::before {
-                left: 18px;
-            }
-            .timeline-item {
-                width: 100%;
-                padding-left: 50px;
-                padding-right: 10px;
-                text-align: left;
-            }
-            .timeline-item:nth-child(odd),
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-            .timeline-item::after {
-                left: 10px;
-            }
-            .timeline-item:nth-child(odd)::after,
-            .timeline-item:nth-child(even)::after {
-                left: 10px;
-            }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            header p { font-size: 1.1rem; }
+            .contact-info { flex-direction: column; gap: 0.8rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .project-grid { grid-template-columns: 1fr; }
+            .container { padding: var(--spacing-unit); }
+            #experience .timeline { padding-left: 20px; }
+            #experience .timeline::before { left: 5px; }
+            #experience .timeline-item::before { left: -5px; }
         }
     </style>
 </head>
-<body>
-<main class="portfolio-shell">
-  <div class="portfolio-card">
-<header>
+<body><main class="portfolio-shell"><div class="portfolio-card">
+    <header>
         <div class="container">
-            <h1>Sampath Kumar Muthyalapati</h1>
-            <p>Aspiring Data Engineer & Data Analyst | Leveraging Python, SQL, and Modern Data Stack Concepts</p>
+            <h1>SAI SRINIVAS NAMBURI</h1>
+            <p>Data Engineer & Applied AI Specialist</p>
             <div class="contact-info">
-                <a href="tel:9392457013">9392457013</a> |
-                <a href="mailto:sampathkumarmuthyalapati@gmail.com">sampathkumarmuthyalapati@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/sampath-kumar-muthyalapati/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/sampath7013" target="_blank">GitHub</a>
+                <a href="mailto:saisrinivas0311@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    saisrinivas0311@gmail.com
+                </a>
+                <a href="tel:+13163762906">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    +1 (316) 376-2906
+                </a>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm0 7c-2.76 0-5-2.24-5-5 0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.76-2.24 5-5 5zm0-12c-3.87 0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm0 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+                    Wichita, KS
+                </span>
+                <a href="https://github.com/mohankrishnaganne" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.923.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 22.179 24 17.607 24 12 24 5.373 18.627 0 12 0z"/></svg>
+                    mohankrishnaganne
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="summary" class="container">
-        <h2>Professional Summary</h2>
-        <p class="summary-text">
-            An enthusiastic and detail-oriented professional with a strong foundation in programming (Python, JavaScript) and database management (SQL, SQLite, MongoDB). Currently pursuing a Master's in Computer Science Engineering, I am passionate about transitioning into Data Engineering and Data Analytics roles. I possess a keen interest in ETL processes, data warehousing, and leveraging modern data stack technologies to transform raw data into actionable insights. My experience as a Teaching Assistant has honed my ability to explain complex technical concepts, problem-solve, and work collaboratively, preparing me to contribute effectively to data-driven environments.
-        </p>
-    </section>
+    <main class="container">
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                <strong>Data Engineer & Applied AI Specialist</strong> with 5+ years of enterprise experience in building scalable data platforms, ETL pipelines, and cloud-based solutions, now specializing in Generative AI and Large Language Model (LLM) applications. Proven expertise in designing and implementing robust data validation, streaming data solutions, and API-driven microservices across healthcare and banking domains. Hands-on experience with the modern data stack, including <strong>AWS, Spark, Kafka, Airflow, and Databricks</strong>, complemented by a strong foundation in Python and SQL. Adept at developing Retrieval-Augmented Generation (RAG) pipelines, prompt engineering workflows, and LLM-powered applications for knowledge automation and intelligent decision support. Skilled at translating complex technical solutions into tangible business impact through data-driven insights and AI innovation.
+            </p>
+        </section>
 
-    <section id="skills" class="container">
-        <h2>Core Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML, CSS</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Databases & Data Tools</h3>
-                <ul>
-                    <li>SQL (PostgreSQL, MySQL concepts)</li>
-                    <li>SQLite</li>
-                    <li>MongoDB</li>
-                    <li>Data Modeling Concepts</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Web Technologies</h3>
-                <ul>
-                    <li>React.js</li>
-                    <li>Node.js, Express.js</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Modern Data Stack (Familiarity & Concepts)</h3>
-                <ul>
-                    <li>AWS (S3, EC2 - foundational understanding)</li>
-                    <li>Apache Spark (Concepts)</li>
-                    <li>Apache Kafka (Concepts)</li>
-                    <li>Apache Airflow (Concepts)</li>
-                    <li>Databricks (Concepts)</li>
-                    <li>Snowflake (Concepts)</li>
-                    <li>dbt (Concepts)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Work Experience</h2>
-        <div class="experience-timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Teaching Assistant</h3>
-                    <p><strong>Nxtwave</strong> | Hyderabad, Telangana</p>
-                    <p>Jun 2025 - Ongoing</p>
-                    <ul>
-                        <li>Provided comprehensive technical support and mentorship to students on core programming concepts, including Python and SQL, fostering a strong understanding of data manipulation and database interaction.</li>
-                        <li>Assisted in debugging and optimizing code related to database queries and backend logic, enhancing students' problem-solving skills in data-driven applications.</li>
-                        <li>Guided students through practical applications of Python for scripting and data handling, and SQL for efficient data retrieval and management.</li>
-                        <li>Clarified doubts across a range of technologies including HTML, CSS, JavaScript, React.js, Node.js, and Express.js, demonstrating broad technical aptitude.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Key Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-card-content">
-                    <h3>Suby App (Food Ordering & Delivery)</h3>
-                    <p>A comprehensive food ordering and delivery application enabling multiple vendors to manage their offerings and customers to browse and order food.</p>
-                    <div class="technologies">HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB</div>
-                    <ul>
-                        <li>Developed a full-stack application with distinct dashboards for vendors to manage products, prices, and offers.</li>
-                        <li>Implemented robust backend logic using Node.js and Express.js, managing data persistence in MongoDB for vendor and customer information.</li>
-                        <li>Designed a user-friendly interface with React.js, allowing customers to view items and place orders based on preferences.</li>
-                    </ul>
-                </div>
-                <div class="project-card-links">
-                    <a href="https://swiggy-clone-react-mu.vercel.app" target="_blank">View Project</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-card-content">
-                    <h3>Todos Application</h3>
-                    <p>A task management solution designed for streamlined organization and persistence of daily tasks.</p>
-                    <div class="technologies">HTML, CSS, JavaScript, Bootstrap</div>
-                    <ul>
-                        <li>Developed an intuitive task management interface using HTML, CSS, and Bootstrap for a responsive user experience.</li>
-                        <li>Implemented seamless CRUD (Create, Read, Update, Delete) operations through JavaScript event listeners and dynamic UI updates.</li>
-                        <li>Ensured secure task persistence using local storage methods, demonstrating client-side data handling.</li>
-                    </ul>
-                </div>
-                <div class="project-card-links">
-                    <a href="https://msktodoapp.ccbp.tech" target="_blank">View Project</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-card-content">
-                    <h3>Tourism Website</h3>
-                    <p>A captivating online resource providing multimedia content and insightful details about popular travel destinations.</p>
-                    <div class="technologies">HTML, CSS, Bootstrap</div>
-                    <ul>
-                        <li>Constructed a mobile-adaptive layout using HTML and CSS3 properties, ensuring optimal viewing across devices.</li>
-                        <li>Integrated destination-specific image carousels and immersive virtual tour videos with Bootstrap components for rich content delivery.</li>
-                        <li>Focused on structured data presentation to enhance user engagement and information accessibility.</li>
-                    </ul>
-                </div>
-                <div class="project-card-links">
-                    <a href="https://tourismmsk.ccbp.tech" target="_blank">View Project</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-card-content">
-                    <h3>Food Munch</h3>
-                    <p>A responsive website showcasing a comprehensive list of food items with a user-centric design.</p>
-                    <div class="technologies">HTML, CSS, Bootstrap</div>
-                    <ul>
-                        <li>Designed with a user-centric approach, featuring HTML structure elements and Bootstrap components for a seamless experience.</li>
-                        <li>Implemented product videos for a closer look at food items, enhancing user interaction and information delivery.</li>
-                        <li>Ensured responsiveness across various screen sizes, providing an accessible platform for exploring food options.</li>
-                    </ul>
-                </div>
-                <div class="project-card-links">
-                    <a href="https://mskfoodmunch.ccbp.tech" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>M Tech (Master of Technology) - Computer Science Engineering (CSE)</h3>
-            <p><strong>Wichita State University</strong>, Wichita</p>
-            <p>2024 - 2026 | CGPA: 3.9</p>
-        </div>
-        <div class="education-item">
-            <h3>B Tech (Bachelor of Technology) - Computer Science Engineering (CSE)</h3>
-            <p><strong>Vasireddy Venkatadri Institute of Technology</strong>, Guntur</p>
-            <p>2020 - 2024 | CGPA: 7.83</p>
-        </div>
-        <div class="education-item">
-            <h3>Industry Ready Certification in Full-stack Development</h3>
-            <p><strong>Nxtwave Disruptive Technologies</strong></p>
-            <p>Jun 2022 - Ongoing</p>
-        </div>
-        <div class="education-item">
-            <h3>Intermediate - MPC</h3>
-            <p><strong>Narayana Junior College</strong>, Vijayawada</p>
-            <p>2018 - 2020 | CGPA: 9.88</p>
-        </div>
-        <div class="education-item">
-            <h3>Secondary School Of Certificate</h3>
-            <p><strong>Alpha High School</strong>, Cumbum</p>
-            <p>2017 - 2018 | CGPA: 10.0</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sampath Kumar Muthyalapati. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/sampath-kumar-muthyalapati/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/sampath7013" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </footer>
-
-            <footer class="footer">
-              <span><span class="accent-dot"></span>Available for data engineering and analytics opportunities</span>
-              <div class="footer-links">
-                <a href="#top">Top</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-              </div>
-            </footer>
-            
-  </div>
-</main>
-</body>
-</html>
-```
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2h1l.06-.01c.01 0 .02 0 .03 0zm6.93-2.08c-.92-1.48-2.81-2.42-4.93-2.42H11v-1c0-.55-.45-1-1-1H9V7.07c3.95.49 7 3.85 7 7.93 0 .62-.08 1.21-.21 1.79L15 9v-.93c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55 0 1 .45 1 1v.93c0 .55-.45 1-1 1h-1v1h1c.55
