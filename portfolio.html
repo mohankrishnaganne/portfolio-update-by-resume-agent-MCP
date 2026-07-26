@@ -1,82 +1,67 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="portfolio-generated-at" content="2026-07-26T21:42:48.464875">
+<meta name="portfolio-generated-at" content="2026-07-26T21:52:07.600992">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohan Krishna Ganne - Senior Data & AI/ML Engineer Portfolio. Specializing in Data Engineering, ETL, Visualization, and AI/ML systems with modern data stack technologies.">
-    <meta name="keywords" content="Data Engineer, AI/ML Engineer, Data Analytics, ETL, Visualization, AWS, Spark, Kafka, Airflow, Databricks, Snowflake, dbt, Python, Machine Learning, Generative AI, LLM">
-    <meta name="author" content="Mohan Krishna Ganne">
-    <meta name="generator-timestamp" content="2026-07-26T21:42:48.464875">
-    <title>Mohan Krishna Ganne - Senior Data & AI/ML Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Sampath Kumar Muthyalapati - Data Engineer & Analyst Portfolio</title>
+    <!-- Generated: 2026-07-26T21:52:07.600992 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --accent-color: #28a745;
+            --primary-color: #007bff; /* A vibrant blue */
+            --secondary-color: #6c757d; /* Muted grey */
+            --accent-color: #28a745; /* Green for success/highlights */
+            --background-light: #f8f9fa;
+            --background-dark: #ffffff;
             --text-color: #343a40;
-            --light-text-color: #f8f9fa;
-            --bg-color: #ffffff;
-            --light-bg-color: #f8f9fa;
+            --heading-color: #212529;
             --border-color: #e9ecef;
-            --shadow-color: rgba(0, 0, 0, 0.05);
+            --shadow-light: rgba(0, 0, 0, 0.05);
+            --shadow-medium: rgba(0, 0, 0, 0.1);
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             margin: 0;
             padding: 0;
-            background-color: var(--light-bg-color);
-            scroll-behavior: smooth;
+            background-color: var(--background-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            box-sizing: border-box;
         }
 
-        /* Header / Hero Section */
-        .hero {
+        header {
             background: linear-gradient(135deg, var(--primary-color), #0056b3);
-            color: var(--light-text-color);
-            padding: 80px 20px;
+            color: #ffffff;
+            padding: 60px 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 4px 8px var(--shadow-medium);
+            width: 100%;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
-            transform: rotate(45deg);
-            opacity: 0.3;
-        }
-
-        .hero h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.5em;
-            margin-bottom: 10px;
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 3.2em;
             font-weight: 700;
-            position: relative;
-            z-index: 1;
+            letter-spacing: 1px;
         }
 
-        .hero p {
+        header p {
             font-size: 1.4em;
-            margin-bottom: 30px;
+            margin: 0 0 20px;
             font-weight: 300;
-            position: relative;
-            z-index: 1;
         }
 
         .contact-info {
@@ -84,562 +69,506 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
-            margin-top: 30px;
-            position: relative;
-            z-index: 1;
+            margin-top: 20px;
         }
 
         .contact-info a {
-            color: var(--light-text-color);
+            color: #ffffff;
             text-decoration: none;
+            font-weight: 400;
             font-size: 1.1em;
+            transition: color 0.3s ease;
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .contact-info a:hover {
-            color: var(--accent-color);
-            transform: translateY(-3px);
+            color: #e0e0e0;
         }
 
-        .contact-info i {
-            font-size: 1.3em;
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
         }
 
-        /* Sections */
         section {
-            padding: 60px 0;
-            border-bottom: 1px solid var(--border-color);
-            background-color: var(--bg-color);
+            background-color: var(--background-dark);
+            margin: 25px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px var(--shadow-light);
+            border-left: 5px solid var(--primary-color);
         }
 
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5em;
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
+        section h2 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
             font-weight: 600;
         }
 
-        h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background-color: var(--accent-color);
-            margin: 15px auto 0;
-            border-radius: 2px;
-        }
-
-        /* Summary */
-        .summary-content {
-            font-size: 1.1em;
+        .summary-text {
+            font-size: 1.15em;
             line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
+            color: var(--text-color);
         }
 
-        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
+            gap: 25px;
         }
 
         .skill-category {
-            background-color: var(--light-bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
+            background-color: var(--background-light);
             padding: 25px;
-            box-shadow: var(--shadow-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px var(--shadow-light);
+            border-top: 3px solid var(--accent-color);
         }
 
         .skill-category h3 {
-            font-family: 'Poppins', sans-serif;
             color: var(--primary-color);
             font-size: 1.4em;
             margin-top: 0;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
-        .skill-list {
+        .skill-category ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+        }
+
+        .skill-category li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            align-items: center;
         }
 
-        .skill-list li {
-            background-color: #e0f7fa;
-            color: #00796b;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 600;
-            white-space: nowrap;
-            transition: background-color 0.3s ease, color 0.3s ease;
+        .skill-category li::before {
+            content: '•';
+            color: var(--accent-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 1.2em;
         }
 
-        .skill-list li:hover {
-            background-color: #00796b;
-            color: #e0f7fa;
-        }
-
-        /* Experience Timeline */
-        .timeline {
+        .experience-timeline {
             position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
+            padding-left: 30px;
         }
 
-        .timeline::after {
+        .experience-timeline::before {
             content: '';
             position: absolute;
-            width: 4px;
-            background-color: var(--primary-color);
+            left: 0;
             top: 0;
             bottom: 0;
-            left: 50%;
-            margin-left: -2px;
+            width: 4px;
+            background-color: var(--border-color);
             border-radius: 2px;
         }
 
-        .timeline-item {
-            padding: 10px 40px;
+        .experience-item {
             position: relative;
-            background-color: inherit;
-            width: 50%;
+            margin-bottom: 40px;
+            padding-left: 30px;
         }
 
-        .timeline-item::after {
+        .experience-item::before {
             content: '';
             position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -17px;
-            background-color: var(--bg-color);
-            border: 4px solid var(--accent-color);
-            top: 15px;
+            left: -10px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
             border-radius: 50%;
+            border: 4px solid var(--background-dark);
             z-index: 1;
         }
 
-        .timeline-left {
-            left: 0;
-        }
-
-        .timeline-right {
-            left: 50%;
-        }
-
-        .timeline-right::after {
-            left: -16px;
-        }
-
-        .timeline-content {
-            padding: 20px 30px;
-            background-color: var(--light-bg-color);
-            position: relative;
-            border-radius: 8px;
-            box-shadow: var(--shadow-color);
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        }
-
-        .timeline-content h3 {
-            font-family: 'Poppins', sans-serif;
-            margin-top: 0;
+        .experience-item h3 {
+            margin: 0 0 5px;
+            font-size: 1.6em;
             color: var(--primary-color);
-            font-size: 1.3em;
+            font-weight: 600;
         }
 
-        .timeline-content p.duration {
-            color: var(--secondary-color);
-            font-size: 0.9em;
-            margin-bottom: 15px;
+        .experience-item .role {
+            font-size: 1.2em;
+            color: var(--heading-color);
+            margin-bottom: 5px;
+            font-weight: 400;
         }
 
-        .timeline-content ul {
-            padding-left: 20px;
-            margin-bottom: 0;
-        }
-
-        .timeline-content ul li {
-            margin-bottom: 8px;
+        .experience-item .duration {
             font-size: 0.95em;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            display: block;
         }
 
-        /* Projects */
-        .projects-grid {
+        .experience-item ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .experience-item li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
         .project-card {
-            background-color: var(--light-bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            box-shadow: var(--shadow-color);
+            background-color: var(--background-light);
             padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow-light);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid var(--primary-color);
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            box-shadow: 0 4px 15px var(--shadow-medium);
         }
 
         .project-card h3 {
-            font-family: 'Poppins', sans-serif;
             color: var(--primary-color);
-            font-size: 1.4em;
+            font-size: 1.5em;
             margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .project-card p {
+            font-size: 1.05em;
             margin-bottom: 15px;
         }
 
         .project-card ul {
-            padding-left: 20px;
-            margin-bottom: 0;
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .project-card ul li {
-            margin-bottom: 8px;
-            font-size: 0.95em;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 400;
         }
 
-        /* Education */
         .education-item {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            background-color: var(--light-bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: var(--shadow-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
         }
 
-        .education-item:hover {
-            transform: translateY(-5px);
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .education-item h3 {
-            font-family: 'Poppins', sans-serif;
+            margin: 0 0 5px;
+            font-size: 1.4em;
             color: var(--primary-color);
-            font-size: 1.8em;
-            margin-top: 0;
-            margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .education-item p {
+            margin: 0;
             font-size: 1.1em;
-            color: var(--secondary-color);
-            margin-bottom: 5px;
+            color: var(--heading-color);
         }
 
-        /* Footer */
+        .education-item .duration {
+            font-size: 0.95em;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+
         footer {
-            background-color: var(--text-color);
-            color: var(--light-text-color);
+            background-color: var(--heading-color);
+            color: #ffffff;
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9em;
+            padding: 30px 20px;
+            margin-top: 40px;
+            width: 100%;
+            box-shadow: 0 -2px 8px var(--shadow-medium);
         }
 
         footer .contact-info {
-            margin-top: 0;
             margin-bottom: 20px;
         }
 
         footer .contact-info a {
-            color: var(--light-text-color);
+            color: #ffffff;
         }
 
-        footer .contact-info a:hover {
-            color: var(--accent-color);
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #cccccc;
         }
 
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .hero h1 {
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
                 font-size: 2.5em;
             }
-
-            .hero p {
-                font-size: 1.1em;
+            header p {
+                font-size: 1.2em;
             }
-
-            h2 {
-                font-size: 2em;
+            section {
+                padding: 30px 20px;
             }
-
-            .timeline::after {
-                left: 31px;
+            section h2 {
+                font-size: 1.8em;
             }
-
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
+            .skills-grid, .project-grid {
+                grid-template-columns: 1fr;
             }
-
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid white;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
+            .experience-timeline {
+                padding-left: 20px;
             }
-
-            .timeline-left::after, .timeline-right::after {
-                left: 18px;
+            .experience-item {
+                padding-left: 20px;
             }
-
-            .timeline-right {
-                left: 0%;
+            .experience-item::before {
+                left: -10px;
             }
         }
 
-        @media screen and (max-width: 480px) {
-            .hero {
-                padding: 60px 15px;
-            }
-            .hero h1 {
+        @media (max-width: 480px) {
+            header h1 {
                 font-size: 2em;
             }
-            .hero p {
+            header p {
                 font-size: 1em;
             }
             .contact-info {
                 flex-direction: column;
                 gap: 10px;
             }
-            .skill-category {
+            .contact-info a {
+                font-size: 1em;
+            }
+            section {
+                padding: 20px 15px;
+                margin: 15px 0;
+            }
+            section h2 {
+                font-size: 1.6em;
+            }
+            .skill-category, .project-card {
                 padding: 20px;
             }
-            .project-card {
-                padding: 20px;
+            .experience-item h3 {
+                font-size: 1.4em;
             }
-            .education-item {
-                padding: 20px;
+            .experience-item .role {
+                font-size: 1.1em;
             }
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <main class="portfolio-shell">
   <div class="portfolio-card">
-<header class="hero">
+<header>
         <div class="container">
-            <h1>Mohan Krishna Ganne</h1>
-            <p>Senior Data & AI/ML Engineer | Driving Insights with Modern Data Stacks & Intelligent Systems</p>
+            <h1>Sampath Kumar Muthyalapati</h1>
+            <p>Data Engineer | Data Analyst | ETL Specialist</p>
             <div class="contact-info">
-                <a href="tel:+13162140932"><i class="fas fa-phone"></i> +1 (316) 214-0932</a>
-                <a href="mailto:mohankrishna5618@gmail.com"><i class="fas fa-envelope"></i> mohankrishna5618@gmail.com</a>
-                <a href="https://www.linkedin.com/in/mohan-krishna-ganne/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/mohankrishnaganne" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#projects"><i class="fas fa-folder-open"></i> Portfolio</a>
+                <a href="tel:+13163043795">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    +1 (316) 304-3795
+                </a>
+                <a href="mailto:Sampathkumarmuthyalapati@gmail.com">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    Sampathkumarmuthyalapati@gmail.com
+                </a>
+                <a href="https://github.com/mohankrishnaganne" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.09.679-.217.679-.481 0-.237-.008-.865-.013-1.702-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.909-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.953 0-1.092.39-1.988 1.029-2.681-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.022A9.607 9.607 0 0112 6.865c.85.004 1.705.115 2.504.337 1.909-1.292 2.747-1.022 2.747-1.022.546 1.379.202 2.398.099 2.651.64.693 1.028 1.59.1028 2.681 0 3.853-2.339 4.69-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C21.137 20.188 24 16.421 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"></path></svg>
+                    GitHub: mohankrishnaganne
+                </a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="summary" class="bg-white">
-            <div class="container">
-                <h2>Professional Summary</h2>
-                <p class="summary-content">
-                    Highly accomplished AI/ML Engineer with over 5 years of experience, specializing in building robust, production-grade machine learning, Generative AI, and LLM systems. Proven expertise in the modern data stack, including **AWS, Apache Spark, Kafka, Airflow, Databricks, and Snowflake**, to design and implement scalable ETL pipelines, data analytics solutions, and advanced visualization frameworks. Adept at developing RAG pipelines, multimodal AI applications, and fine-tuning workflows, with a strong background in MLOps and end-to-end ownership of AI systems from experimentation to deployment. Passionate about leveraging data-driven insights to solve complex engineering and business challenges.
-                </p>
-            </div>
+    <main class="container">
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                A highly skilled Data Engineer and Data Analyst with 4 years of experience in designing, building, and optimizing robust data pipelines, developing predictive models, and delivering scalable analytics solutions. Proven success in enhancing ETL workflows and automating data processes, leading to significant improvements in reporting speed and decision-making efficiency. Proficient in the modern data stack, including Python, SQL, Power BI, Tableau, and cloud platforms like AWS, Azure, and GCP. Expertise spans data modeling, visualization, machine learning, and real-time data processing, consistently contributing to increased operational efficiency and reduced overhead.
+            </p>
         </section>
 
         <section id="skills">
-            <div class="container">
-                <h2>Core Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Data Engineering & Distributed Computing</h3>
-                        <ul class="skill-list">
-                            <li>Apache Spark</li>
-                            <li>Databricks</li>
-                            <li>Snowflake</li>
-                            <li>Kafka</li>
-                            <li>Ray</li>
-                            <li>ETL Pipelines</li>
-                            <li>Distributed Training</li>
-                            <li>dbt</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Cloud Platforms & MLOps</h3>
-                        <ul class="skill-list">
-                            <li>AWS (S3, EC2, Lambda, SageMaker, Bedrock)</li>
-                            <li>Azure OpenAI Service</li>
-                            <li>Terraform</li>
-                            <li>MLflow</li>
-                            <li>Airflow</li>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>CI/CD Pipelines</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Generative AI & LLMs</h3>
-                        <ul class="skill-list">
-                            <li>Hugging Face Transformers</li>
-                            <li>LLaMA</li>
-                            <li>GPT APIs</li>
-                            <li>Prompt Engineering</li>
-                            <li>LangChain</li>
-                            <li>LangGraph</li>
-                            <li>RAG</li>
-                            <li>Fine-Tuning (LoRA, QLoRA, PEFT)</li>
-                            <li>Embeddings</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Machine Learning & Deep Learning</h3>
-                        <ul class="skill-list">
-                            <li>PyTorch</li>
-                            <li>TensorFlow</li>
-                            <li>Scikit-learn</li>
-                            <li>XGBoost</li>
-                            <li>LightGBM</li>
-                            <li>Feature Engineering</li>
-                            <li>Time-Series Forecasting</li>
-                            <li>Model Evaluation</li>
-                            <li>Explainable AI (SHAP, LIME)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Programming & Databases</h3>
-                        <ul class="skill-list">
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>Scala</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>Redis</li>
-                            <li>Vector Databases (Pinecone, FAISS, Weaviate)</li>
-                            <li>Elasticsearch</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Methodologies</h3>
-                        <ul class="skill-list">
-                            <li>Git</li>
-                            <li>GitHub Actions</li>
-                            <li>Linux</li>
-                            <li>Jira</li>
-                            <li>Confluence</li>
-                            <li>REST APIs</li>
-                            <li>FastAPI</li>
-                            <li>A/B Testing</li>
-                        </ul>
-                    </div>
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Engineering & ETL</h3>
+                    <ul>
+                        <li><strong>Modern Data Stack:</strong> Snowflake, Apache Spark, DBT (Data Build Tool)</li>
+                        <li><strong>Orchestration:</strong> Apache Airflow, Azure Data Factory</li>
+                        <li><strong>Ingestion:</strong> FiveTran, Apache NiFi</li>
+                        <li><strong>Big Data:</strong> Hive</li>
+                        <li>ETL/ELT Pipelines, Data Quality Checks, Data Migration, Data Architecture Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Big Data & Real-time Streaming</h3>
+                    <ul>
+                        <li><strong>Streaming Platforms:</strong> Apache Kafka, Spark Streaming, AWS Kinesis, Azure Event Hubs</li>
+                        <li>Apache ZooKeeper</li>
+                        <li>Real-Time Data Ingestion</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Platforms & Databases</h3>
+                    <ul>
+                        <li><strong>Cloud:</strong> Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure, Azure Data Lake</li>
+                        <li><strong>Databases:</strong> MySQL, PostgreSQL, Oracle, MongoDB</li>
+                        <li><strong>Analytics:</strong> Azure Synapse Analytics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <ul>
+                        <li><strong>Languages:</strong> Python, SQL, Java</li>
+                        <li><strong>Data Science Libraries:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, Keras, FB Prophet</li>
+                        <li><strong>Containerization & CI/CD:</strong> Docker, GitHub Actions, Jenkins</li>
+                        <li><strong>Infrastructure:</strong> Terraform</li>
+                        <li><strong>Monitoring:</strong> ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                        <li><strong>Data Quality:</strong> Great Expectations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis & ML</h3>
+                    <ul>
+                        <li><strong>Visualization:</strong> Power BI, Tableau, Excel</li>
+                        <li><strong>Machine Learning:</strong> Supervised Learning Models, Feature Extraction and Selection, Hyperparameter Tuning, Deep Learning (ResNet, EfficientNet)</li>
+                        <li>Predictive Modeling, Exploratory Data Analysis (EDA)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web & Project Management</h3>
+                    <ul>
+                        <li><strong>Web Technologies:</strong> Flask, REST APIs, Postman</li>
+                        <li><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
+                        <li><strong>Project Management:</strong> JIRA, Trello, Version One</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="bg-white">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-content">
-                            <h3>AI/ML Engineer</h3>
-                            <p class="duration">NIAR | Mar 2025 – Present | United States</p>
-                            <ul>
-                                <li>Developed Generative AI and RAG-based engineering knowledge assistants using Python, LangChain, LangGraph, OpenAI APIs, Pinecone, and hybrid retrieval, enabling researchers to query 1.8 million technical records and reducing document search efforts by 320 hours per quarter.</li>
-                                <li>Built machine learning pipelines with PyTorch, Hugging Face Transformers, MLflow, and Databricks to support predictive maintenance and structural health monitoring initiatives, processing 14 TB of sensor and inspection datasets across aircraft sustainment programs.</li>
-                                <li>Fine-tuned domain-specific language models using LoRA, QLoRA, and PEFT techniques, reducing training resource requirements and supporting specialized question-answering workflows for engineering documentation and certification datasets.</li>
-                                <li>Designed FastAPI-based inference services with vLLM, ONNX Runtime, Docker, and Kubernetes, supporting approximately 75,000 monthly inference requests and reducing model release cycles from three weeks to six days.</li>
-                                <li>Developed evaluation frameworks using RAGAS, DeepEval, and hallucination detection techniques, supported production AI services, and resolved more than 110 issues affecting model reliability and data quality.</li>
-                                <li>Implemented distributed feature engineering and ETL pipelines using **Spark, Airflow, Kafka, Snowflake, and AWS S3**, enabling scalable data ingestion and analytics for digital twin and predictive maintenance initiatives.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-content">
-                            <h3>Machine Learning Engineer</h3>
-                            <p class="duration">Resideo Smart Home Technologies (Honeywell Home) | Feb 2021 – Aug 2024 | India</p>
-                            <ul>
-                                <li>Developed time-series forecasting models using TensorFlow, XGBoost, and PySpark to analyze telemetry from more than 2.4 million connected thermostats, enabling energy optimization initiatives and reducing peak-load prediction errors across smart home environments.</li>
-                                <li>Built anomaly detection pipelines for HVAC devices using Scikit-learn and **Kafka-based streaming data**, processing approximately 3 million sensor events daily and identifying failure patterns that reduced customer support escalations by 18%.</li>
-                                <li>Designed recommendation and customer segmentation models with LightGBM, SHAP, and PostgreSQL, supporting personalized automation experiences for 1.4 million users and improving adoption of premium smart home features.</li>
-                                <li>Implemented computer vision workflows using OpenCV, TensorFlow, and EfficientNet architectures to automate manufacturing quality inspections, analyzing 620,000 device images and reducing manual review efforts by 430 engineering hours annually.</li>
-                                <li>Collaborated with firmware and embedded engineering teams to develop occupancy prediction algorithms and ensemble learning models based on sensor telemetry, enabling intelligent temperature scheduling across multiple device families.</li>
-                                <li>Established ML lifecycle practices with MLflow, Jenkins, Docker, Git, and A/B testing frameworks, reducing model retraining times from 9 hours to under 4 hours and enabling biweekly production releases.</li>
-                                <li>Created NLP pipelines using spaCy and NLTK to classify customer feedback and warranty claims, extracting insights from more than 2.7 million records and accelerating root cause investigations for recurring product issues.</li>
-                                <li>Provided production support for machine learning services hosted on **AWS** and Linux environments, conducted root cause analysis, documented model behavior, and resolved over 140 issues affecting prediction quality and pipeline reliability.</li>
-                            </ul>
-                        </div>
-                    </div>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <h3>Cognizant Technology Solutions, India</h3>
+                    <p class="role">Program Analyst (Machine Learning)</p>
+                    <span class="duration">Aug 2022 – May 2024</span>
+                    <ul>
+                        <li>Engineered and maintained scalable ETL pipelines to process 10TB+ of data daily, ensuring high data quality and availability for machine learning models.</li>
+                        <li>Deployed machine learning models into production environments, automating predictions and saving 20+ hours per week in manual analysis.</li>
+                        <li>Optimized SQL queries and database schemas, improving data retrieval speeds by 25% for downstream machine learning tasks.</li>
+                        <li>Automated data preprocessing tasks with Python and PySpark, reducing model training time by 40% and enhancing data pipeline efficiency.</li>
+                        <li>Formulated a cloud-based data pipeline architecture using GCP and Airflow, enabling the team to scale data operations by 50% during peak loads.</li>
+                        <li>Collaborated with cross-functional teams to deliver actionable insights, driving a 15% increase in operational efficiency through data-driven decisions.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Devpoint Solutions Pvt Ltd, India</h3>
+                    <p class="role">Data Analyst</p>
+                    <span class="duration">Jun 2020 – July 2022</span>
+                    <ul>
+                        <li>Developed and maintained ETL pipelines using Python and SQL to automate data ingestion, transformation, and loading from multiple business systems.</li>
+                        <li>Conducted exploratory data analysis (EDA) on customer behavior and sales performance datasets, uncovering patterns that improved campaign targeting by 20%.</li>
+                        <li>Created and deployed interactive dashboards in Power BI to visualize key business metrics, reducing report turnaround time by 40%.</li>
+                        <li>Designed and optimized complex SQL queries for ad hoc analysis, enabling teams to access insights faster and with improved accuracy.</li>
+                        <li>Implemented data cleaning and preprocessing routines using Pandas and NumPy to prepare structured datasets for analytical modeling.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <div class="container">
-                <h2>Selected Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Multimodal Document AI & Agent System</h3>
-                        <ul>
-                            <li>Built a multimodal document processing system integrating vision transformers, OCR pipelines, and LLM-based reasoning to extract structured data from invoices, IDs, and PDFs, processing 50K+ documents in batch and experimental settings with optimized per-page inference.</li>
-                            <li>Developed an LLM-based agent workflow using LangChain and retrieval-augmented generation over document embeddings to automate classification, field extraction, and validation tasks, reducing manual annotation effort by 25% in controlled evaluation experiments.</li>
-                        </ul>
-                    </div>
-                    <div class="project-card">
-                        <h3>Real-Time LLM-Powered Decision Intelligence & Forecasting Platform</h3>
-                        <ul>
-                            <li>Developed a forecasting system combining time-series transformer models with LLM-assisted analytics to analyze operational and synthetic demand datasets, enabling near real-time prediction experiments with sub-2-second inference in prototype environments.</li>
-                            <li>Implemented a GenAI analytics layer using retrieval-augmented generation over historical datasets and dashboards, enabling natural language querying, anomaly explanation, and scenario analysis, improving forecasting accuracy (MAPE) by 18% in validation tests.</li>
-                        </ul>
-                    </div>
+            <h2>Key Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Olympics Data Analysis</h3>
+                    <p>Designed and executed robust ETL pipelines using Azure Data Factory and Databricks, significantly improving data accuracy for subsequent analytics by 20%. Utilized Azure Synapse Analytics to perform complex SQL queries, identifying key trends and patterns within historical Olympic data.</p>
+                    <ul>
+                        <li>Azure Data Factory</li>
+                        <li>Databricks</li>
+                        <li>Azure Synapse Analytics</li>
+                        <li>SQL</li>
+                        <li>ETL</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Breast Cancer Image Classification</h3>
+                    <p>Developed a deep learning pipeline leveraging ResNet and EfficientNet architectures for the classification of histopathology images, aiming for early breast cancer detection. Applied transfer learning and fine-tuning techniques to enhance model generalization and classification accuracy. Implemented training workflows using TensorFlow and Keras, evaluating performance with confusion matrix and ROC-AUC metrics.</p>
+                    <ul>
+                        <li>Deep Learning</li>
+                        <li>ResNet</li>
+                        <li>EfficientNet</li>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>Transfer Learning</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Credit Card Fraud Detection</h3>
+                    <p>Implemented and evaluated various machine learning models, including Logistic Regression, Random Forest, and XGBoost, to accurately classify fraudulent transactions within a highly imbalanced dataset. Employed data balancing techniques like SMOTE and rigorously assessed model reliability using precision, recall, F1-score, and ROC-AUC to select the optimal classifier.</p>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>XGBoost</li>
+                        <li>Random Forest</li>
+                        <li>SMOTE</li>
+                        <li>Fraud Detection</li>
+                        <li>Python</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="bg-white">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Master of Science in Data Science</h3>
-                    <p>Wichita State University, Kansas</p>
-                    <p>GPA: 3.80/4.0</p>
-                </div>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master’s in Computer Science</h3>
+                <p>Wichita State University, Wichita, KS</p>
+                <span class="duration">Aug 2024 – May 2026</span>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Technology – Computer Science and Engineering (AI ML)</h3>
+                <p>Vasireddy Venkatadri Institute of Technology, Guntur, India</p>
+                <span class="duration">Aug 2016 – May 2020</span>
             </div>
         </section>
     </main>
@@ -647,16 +576,33 @@
     <footer>
         <div class="container">
             <div class="contact-info">
-                <a href="tel:+13162140932"><i class="fas fa-phone"></i> +1 (316) 214-0932</a>
-                <a href="mailto:mohankrishna5618@gmail.com"><i class="fas fa-envelope"></i> mohankrishna5618@gmail.com</a>
-                <a href="https://www.linkedin.com/in/mohan-krishna-ganne/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/mohankrishnaganne" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                <a href="tel:+13163043795">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    +1 (316) 304-3795
+                </a>
+                <a href="mailto:Sampathkumarmuthyalapati@gmail.com">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    Sampathkumarmuthyalapati@gmail.com
+                </a>
+                <a href="https://github.com/mohankrishnaganne" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.09.679-.217.679-.481 0-.237-.008-.865-.013-1.702-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.909-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.953 0-1.092.39-1.988 1.029-2.681-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.022A9.607 9.607 0 0112 6.865c.85.004 1.705.115 2.504.337 1.909-1.292 2.747-1.022 2.747-1.022.546 1.379.202 2.398.099 2.651.64.693 1.028 1.59.1028 2.681 0 3.853-2.339 4.69-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C21.137 20.188 24 16.421 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"></path></svg>
+                    GitHub: mohankrishnaganne
+                </a>
             </div>
-            <p>&copy; 2024 Mohan Krishna Ganne. All rights reserved.</p>
+            <p>&copy; 2024 Sampath Kumar Muthyalapati. All rights reserved.</p>
         </div>
     </footer>
+
+            <footer class="footer">
+              <span><span class="accent-dot"></span>Available for data engineering and analytics opportunities</span>
+              <div class="footer-links">
+                <a href="#top">Top</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+              </div>
+            </footer>
+            
   </div>
 </main>
 </body>
 </html>
-```
