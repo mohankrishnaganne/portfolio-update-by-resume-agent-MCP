@@ -1,6 +1,6 @@
 import unittest
 
-from Services.ai_agent_service import inject_commit_metadata
+from Services.ai_agent_service import build_polished_portfolio_html, inject_commit_metadata
 
 
 class AiAgentServiceTests(unittest.TestCase):
@@ -18,6 +18,15 @@ class AiAgentServiceTests(unittest.TestCase):
         second = inject_commit_metadata(html, timestamp="2026-07-23T12:00:01Z")
 
         self.assertNotEqual(first, second)
+
+    def test_build_polished_portfolio_html_adds_professional_styles(self):
+        html = "<html><body><h1>Jane Doe</h1><p>Data Engineer</p></body></html>"
+        updated = build_polished_portfolio_html(html)
+
+        self.assertIn("portfolio-shell", updated)
+        self.assertIn("font-family: 'Inter', 'Segoe UI', sans-serif", updated)
+        self.assertIn("Jane Doe", updated)
+        self.assertIn("<style>", updated)
 
 
 if __name__ == "__main__":
