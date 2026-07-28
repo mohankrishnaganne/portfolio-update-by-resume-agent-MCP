@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Generator</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            /* Update this path to match your static folder setup */
+            background-image: url('/static/background image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        .container { 
+            background-color: rgba(255, 255, 255, 0.5); 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); 
+            text-align: center; 
+            max-width: 400px; 
+            width: 100%; 
+        }
+        h2 { 
+            color: #1e293b; 
+            margin-bottom: 25px; 
+            font-weight: 700;
+        }
+        
+        /* --- NEW FILE UPLOAD STYLES --- */
+        .hidden-input {
+            display: none; /* Hides the ugly default file input */
+        }
+        .custom-upload-zone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px; 
+            width: 100%; 
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px dashed rgba(30, 41, 59, 0.4);
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #1e293b;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .custom-upload-zone:hover {
+            border-color: #007bff;
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        .upload-icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        /* ------------------------------ */
+
+        button { 
+            background: linear-gradient(135deg, #007bff, #0056b3); 
+            color: white; 
+            border: none; 
+            padding: 14px 20px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%; 
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+        button:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate Portfolio</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="document.getElementById('btn').innerText='Building...';">
+            
+            <!-- Custom Upload Zone -->
+            <label for="resumeUpload" class="custom-upload-zone">
+                <span class="upload-icon">📄</span>
+                <span id="fileNameDisplay">Upload Resume (.pdf)</span>
+            </label>
+            <!-- The actual hidden input -->
+            <input type="file" name="resume" id="resumeUpload" accept=".pdf" required class="hidden-input">
+            
+            <button type="submit" id="btn">Build My Portfolio</button>
+        </form>
+    </div>
+
+    <!-- JavaScript to update the text when a file is selected -->
+    <script>
+        const fileInput = document.getElementById('resumeUpload');
+        const fileNameDisplay = document.getElementById('fileNameDisplay');
+
+        fileInput.addEventListener('change', function(event) {
+            if (event.target.files.length > 0) {
+                // Gets the name of the file and updates the label text
+                fileNameDisplay.textContent = event.target.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'Upload Resume (.pdf)';
+            }
+        });
+    </script>
+</body>
+</html>
