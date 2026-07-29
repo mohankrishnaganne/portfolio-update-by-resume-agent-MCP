@@ -13,6 +13,7 @@ def lambda_handler(event, context):
     
     try:
         print("Welcome to My Portfolio Creator! 🚀")
+        print("Upload resume here to see your portfolio generated")
         # 1. Parse bucket and filename from the S3 event trigger
         bucket = event['Records'][0]['s3']['bucket']['name']
         key = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')
