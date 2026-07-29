@@ -30,7 +30,7 @@ def upload_file():
             <p style="color: #6c757d;">Our AI pipeline is now generating your portfolio and committing it to GitHub. This usually takes a few minutes.</p>
             
             <div style="margin-top: 35px; display: flex; justify-content: center; align-items: center; gap: 25px;">
-                <a href="https://htmlpreview.github.io/?https://github.com/mohankrishnaganne/mcp-demo-repo/blob/main/portfolio.html" target="_blank" style="background-color: #24292e; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background-color 0.2s;">
+                <a href="https://github.com/mohankrishnaganne/mcp-demo-repo" target="_blank" style="background-color: #24292e; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background-color 0.2s;">
                     View GitHub Repository ↗
                 </a>
                 <a href="/" style="color: #007bff; text-decoration: none; font-weight: 500;">
